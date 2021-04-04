@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
+import PropTypes from 'prop-types'
 import FindContacts from './FindContacts'
 import ContactsList from './ContactsList'
 
@@ -15,6 +16,13 @@ export class Contacts extends Component {
             </div>
         )
     }
+}
+
+Contacts.propTypes = {
+    contacts: PropTypes.array.isRequired,
+    deleteContact: PropTypes.func.isRequired,
+    filter: PropTypes.string.isRequired,
+    handleFilter: PropTypes.func.isRequired
 }
 
 export default Contacts

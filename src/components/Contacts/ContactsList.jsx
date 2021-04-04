@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
 import styles from './styles.module.scss'
 
 export class ContactsList extends Component {
