@@ -47,7 +47,6 @@ export class App extends Component {
 
   render() {
     const { contacts, filter } = this.state;
-    // const { feadback, title, buttons, button } = styles;
 
     const visebleContacts = contacts.filter(({ name, number }) => name.toLocaleLowerCase().includes(filter.toLocaleLowerCase()) || number.includes(filter))
 
