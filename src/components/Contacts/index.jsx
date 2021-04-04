@@ -22,7 +22,7 @@ Contacts.propTypes = {
     contacts: PropTypes.array.isRequired,
     deleteContact: PropTypes.func.isRequired,
     filter: PropTypes.string.isRequired,
-    handleFilter: PropTypes.func.isRequired
+    onChange: PropTypes.func.isRequired
 }
 
 export default Contacts
